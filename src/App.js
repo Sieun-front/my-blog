@@ -1,14 +1,19 @@
-import Introduction from './Introduction';
-import AboutMe from './AboutMe';
-import Experiences from './Experiences';
-import Footer from './Footer';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Posts from './pages/Posts';
+import Write from './pages/Write';
+
 function App() {
     return (
         <div>
-            <Introduction />
-            <AboutMe />
-            <Experiences />
-            <Footer />
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/posts" element={<Posts />} />
+                <Route path="/write" element={<Write />} />
+            </Routes>
         </div>
     );
 }
