@@ -26,16 +26,6 @@ function Experiences() {
                     </ul>
                 </div>
             </div>
-            <h4
-                style={{
-                    textAlign: 'center',
-                    fontSize: '24px',
-                    marginTop: '60px',
-                    marginBottom: '40px',
-                }}
-            >
-                Contact
-            </h4>
         </section>
     );
 }
